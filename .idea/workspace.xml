@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c68bfe85-aead-43ac-b7d2-e75fba6a5108" name="Default" comment="" />
+    <list default="true" id="c68bfe85-aead-43ac-b7d2-e75fba6a5108" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/cc.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/cc.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/spider_dome$start.coverage" NAME="start Coverage Results" MODIFIED="1540363866369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
-    <SUITE FILE_PATH="coverage/spider_dome$cc.coverage" NAME="cc Coverage Results" MODIFIED="1540367590157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
+    <SUITE FILE_PATH="coverage/spider_dome$cc.coverage" NAME="cc Coverage Results" MODIFIED="1540546288509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -77,8 +80,8 @@
       <file leaf-file-name="cc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weibo/cc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="360">
+              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -141,9 +144,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="810" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="522" />
+    <option name="width" value="851" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -291,9 +294,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.2160804" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25619835" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.47359735" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49583334" visible="true" weight="0.17927383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49583334" visible="true" weight="0.1096823" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -606,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/cc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="360">
+          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
