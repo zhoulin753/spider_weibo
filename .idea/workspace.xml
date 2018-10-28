@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68bfe85-aead-43ac-b7d2-e75fba6a5108" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/cc.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/cc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/spider_dome$start.coverage" NAME="start Coverage Results" MODIFIED="1540363866369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
-    <SUITE FILE_PATH="coverage/spider_dome$cc.coverage" NAME="cc Coverage Results" MODIFIED="1540546288509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
+    <SUITE FILE_PATH="coverage/spider_dome$cc.coverage" NAME="cc Coverage Results" MODIFIED="1540703105764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -80,8 +79,8 @@
       <file leaf-file-name="cc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weibo/cc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="160">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -294,9 +293,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.2160804" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25619835" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25619835" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.47359735" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49583334" visible="true" weight="0.1096823" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49583334" visible="true" weight="0.1096823" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -609,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/cc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="160">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

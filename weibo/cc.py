@@ -22,7 +22,7 @@ datadict = {
 }
 
 
-new_r = requests.post(urls,cookie=datadict)
+new_r = requests.post(urls, json=datadict)
 # print(new_r.cookies.get_dict())
 print(urls)
 print(new_r.url)
