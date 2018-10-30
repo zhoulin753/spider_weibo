@@ -14,7 +14,7 @@ class JavaScriptMiddleware(object):
         if spider.name == "text":
 
             driver = webdriver.PhantomJS(executable_path=
-                                         r"C:\Users\admin\Downloads\phantomjs-2.1.1-windows\phantomjs-2.1.1-windows\bin\phantomjs")  # 指定使用的浏览器
+                                         r"C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\phantomjs-2.1.1-windows\bin\phantomjs")  # 指定使用的浏览器
             # driver = webdriver.Firefox()
             driver.get(request.url)
             time.sleep(1)
@@ -28,3 +28,4 @@ class JavaScriptMiddleware(object):
             return HtmlResponse(driver.current_url, body=body, encoding='utf-8', request=request)
         else:
             return
+{}

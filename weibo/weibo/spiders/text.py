@@ -41,7 +41,7 @@ class TextSpider(CrawlSpider):
 
     rules = (
         Rule(LinkExtractor(
-            allow=r'id=\d+',
+            #allow=r'id=\d+',
             restrict_xpaths='//h3[@class="list_title_b"]/a | //meta'),
             callback='parse_item',
             follow=True,
