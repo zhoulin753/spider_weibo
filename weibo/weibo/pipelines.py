@@ -8,4 +8,5 @@
 
 class WeiboPipeline(object):
     def process_item(self, item, spider):
+        print(title)
         return item

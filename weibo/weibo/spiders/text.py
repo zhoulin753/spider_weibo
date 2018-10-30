@@ -4,6 +4,11 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from weibo.items import WeiboItem
 import json
+from scrapy.utils.deprecate import method_is_overridden
+import warnings
+from scrapy.http import Request
+'C:\Python 3.6\Lib\site-packages\scrapy\spiders\__init__.py'
+from scrapy.spiders.init import Spider
 '''https://passport.weibo.com/visitor/visitor?entry=miniblog&
 a=enter&url=https%3A%2F%2Fweibo.com%2Fttarticle%2Fp%2Fshow%3Fid%3D2309404298589458312259&domain=.weibo.com&ua=php-sso_sdk_clien
 t-0.6.28&_rand=1540348813.0018'''
@@ -41,31 +46,46 @@ class TextSpider(CrawlSpider):
 
     rules = (
         Rule(LinkExtractor(
-            #allow=r'id=\d+',
+            allow=r'id=\d+',
             restrict_xpaths='//h3[@class="list_title_b"]/a | //meta'),
             callback='parse_item',
             follow=True,
 
         ),
     )
+    def start_requests(self):
+        cls = self.__class__
+        if method_is_overridden(cls, Spider, 'make_requests_from_url'):
+            warnings.warn(
+                "Spider.make_requests_from_url method is deprecated; it "
+                "won't be called in future Scrapy releases. Please "
+                "override Spider.start_requests method instead (see %s.%s)." % (
+                    cls.__module__, cls.__name__
+                ),
+            )
+            for url in self.start_urls:
+                yield self.make_requests_from_url(url)
+        else:
+            for url in self.start_urls:
+                yield Request(url, dont_filter=True)
 
     def parse_item(self, response):
 
         print('1',response)
         title = response.xpath(
-            r'//div[@node-type="articleTitle"]/text()')[0].extract()
+            r'//div[@node-type="articleTitle"]/text()').extract_first()
         print('1',title)
-        author = response.xpath(r"//em[@class='W_autocut']/text()")[0].extract()
-        time_list = response.xpath(r'//span[@class="time"]/text()')[0].extract().split(' ')
+        author = response.xpath(r"//em[@class='W_autocut']/text()").extract_first()
+        time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
         time = time_list[1] + ' ' + time_list[2]
         if not title:
             print('2',response)
             response = response.xpath('//body')
             title = response.xpath(
-                r'//div[@node-type="articleTitle"]/text()')[0].extract()
+                r'//div[@node-type="articleTitle"]/text()').extract_first()
             print('2',title)
-            author = response.xpath(r"//em[@class='W_autocut']/text()")[0].extract()
-            time_list = response.xpath(r'//span[@class="time"]/text()')[0].extract().split(' ')
+            author = response.xpath(r"//em[@class='W_autocut']/text()").extract_first()
+            time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
             time = time_list[1] + ' ' + time_list[2]
 
             # title='空'
