@@ -3,7 +3,7 @@ import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from weibo.items import WeiboItem
-
+import json
 
 def append_url(list):
     page = 3
@@ -58,6 +58,8 @@ class TextSpider(CrawlSpider):
             response = response.xpath('//body')
             title = response.xpath(
                 r'//div[@node-type="articleTitle"]/text()').extract_first()
+            if title == None:
+                print(response.body)
             print('2 title', title)
             author = response.xpath(r"//em[@class='W_autocut']/text()").extract_first()
             # time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
