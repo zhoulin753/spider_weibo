@@ -29,12 +29,12 @@ class TextSpider(CrawlSpider):
     ]
     start_urls = append_url(start_urls)
     rules = (
-        Rule(
-            LinkExtractor(
-                allow=r'id=\d+',
-                restrict_xpaths='//h3[@class="list_title_b"]/a'),
-            callback='parse_item',
-            follow=True, ),
+        # Rule(
+        #     LinkExtractor(
+        #         allow=r'id=\d+',
+        #         restrict_xpaths='//h3[@class="list_title_b"]/a'),
+        #     callback='parse_item',
+        #     follow=True, ),
         Rule(
             LinkExtractor(
                 allow=r'id=\d+',
@@ -45,7 +45,7 @@ class TextSpider(CrawlSpider):
 
     def parse_item(self, response):
 
-        print('1', response)
+        print('1', response,response.url)
         title = response.xpath(
             r'//div[@node-type="articleTitle"]/text()').extract_first()
         print('1 title', title)
@@ -54,7 +54,7 @@ class TextSpider(CrawlSpider):
         # time = time_list[1] + ' ' + time_list[2]
         if title == None:
             print('进来了')
-            print('2 response', response)
+            print('2 response', response,response.url)
             response = response.xpath('//body')
             title = response.xpath(
                 r'//div[@node-type="articleTitle"]/text()').extract_first()
