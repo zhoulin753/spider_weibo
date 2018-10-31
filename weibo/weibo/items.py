@@ -15,4 +15,3 @@ class WeiboItem(scrapy.Item):
     time = scrapy.Field()
     article = scrapy.Field()
     author = scrapy.Field()
-    print(title)

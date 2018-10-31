@@ -1,0 +1,1832 @@
+2018-10-31 14:40:51 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 14:40:51 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 14:40:51 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 14:40:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 14:40:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 14:40:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 14:40:52 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 14:40:52 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 14:40:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 14:40:52 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 14:41:17 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=12>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:41:30 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=7>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:41:41 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=10018>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:41:57 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=10007>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:41:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 14:42:08 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=1760>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:42:20 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=novelty>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:42:40 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=99991>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:42:57 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=3&lefnav=0&cursor=>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:42:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 14:43:14 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=4&lefnav=0&cursor=>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:43:31 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=5&lefnav=0&cursor=>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 14:43:49 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=6&lefnav=0&cursor=>
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\core\downloader\middleware.py", line 40, in process_request
+    (six.get_method_self(method).__class__.__name__, response.__class__.__name__)
+AssertionError: Middleware JavaScriptMiddleware.process_request must return None, Response or Request, got tuple
+2018-10-31 15:23:27 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 15:23:27 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 15:23:27 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 15:23:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 15:23:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 15:23:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 15:23:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 15:23:29 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 15:23:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:23:30 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 15:26:29 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 14 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:26:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301189893219289> (referer: https://weibo.com/?category=12)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:28:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301150856817016> (referer: https://weibo.com/?category=7)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:28:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301193852624041> (referer: https://weibo.com/?category=12)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:28:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301190862128154> (referer: https://weibo.com/?category=12)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:28:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301182783894039> (referer: https://weibo.com/?category=12)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:29:09 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 12 pages/min), scraped 4 items (at 4 items/min)
+2018-10-31 15:30:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301189922570740> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:30:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301193298980618> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:30:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301193751982588> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:30:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301192963488794> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:30:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301190421710824> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:16 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 9 pages/min), scraped 7 items (at 3 items/min)
+2018-10-31 15:31:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301131529461169> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301123442887089> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301122784390770> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404300894098306298> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404300927929556042> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301129868534161> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301133932809219> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 46, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:31:35 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 1 pages/min), scraped 8 items (at 1 items/min)
+2018-10-31 15:32:42 [scrapy.extensions.logstats] INFO: Crawled 40 pages (at 4 pages/min), scraped 8 items (at 0 items/min)
+2018-10-31 15:33:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 15:33:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 1378286,
+ 'downloader/response_count': 42,
+ 'downloader/response_status_count/200': 42,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 7, 33, 15, 133872),
+ 'item_scraped_count': 8,
+ 'log_count/ERROR': 17,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 42,
+ 'scheduler/dequeued': 42,
+ 'scheduler/dequeued/memory': 42,
+ 'scheduler/enqueued': 42,
+ 'scheduler/enqueued/memory': 42,
+ 'spider_exceptions/AttributeError': 17,
+ 'start_time': datetime.datetime(2018, 10, 31, 7, 23, 29, 895402)}
+2018-10-31 15:33:15 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 15:34:28 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 15:34:28 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 15:34:28 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 15:34:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 15:34:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 15:34:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 15:34:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 15:34:29 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 15:34:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:34:29 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 15:36:53 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 15:36:53 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 15:36:53 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 15:36:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 15:36:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 15:36:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 15:36:54 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 15:36:54 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 15:36:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:36:54 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 15:38:14 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:38:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301150856817016> (referer: https://weibo.com/?category=7)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 52, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:38:58 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:40:00 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:41:03 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:41:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 15:41:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 729222,
+ 'downloader/response_count': 18,
+ 'downloader/response_status_count/200': 18,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 7, 41, 3, 747115),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 18,
+ 'scheduler/dequeued': 18,
+ 'scheduler/dequeued/memory': 18,
+ 'scheduler/enqueued': 18,
+ 'scheduler/enqueued/memory': 18,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2018, 10, 31, 7, 36, 54, 194968)}
+2018-10-31 15:41:03 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 15:44:26 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 15:44:26 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 15:44:26 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 15:44:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 15:44:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 15:44:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 15:44:26 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 15:44:26 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 15:44:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:44:26 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 15:45:32 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:48:11 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:48:29 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 1 pages/min), scraped 1 items (at 1 items/min)
+2018-10-31 15:48:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301039724576477> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 52, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:48:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301114777450120> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 52, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:48:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301068468099283> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 52, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:49:28 [scrapy.extensions.logstats] INFO: Crawled 22 pages (at 4 pages/min), scraped 5 items (at 4 items/min)
+2018-10-31 15:50:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 15:50:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 667875,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 25,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 7, 50, 15, 717474),
+ 'item_scraped_count': 5,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 25,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'spider_exceptions/AttributeError': 3,
+ 'start_time': datetime.datetime(2018, 10, 31, 7, 44, 26, 649741)}
+2018-10-31 15:50:15 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 15:52:57 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 15:52:57 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 15:52:57 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 15:52:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 15:52:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 15:52:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 15:52:59 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 15:52:59 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 15:52:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:52:59 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 15:54:16 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:56:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301150856817016> (referer: https://weibo.com/?category=7)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:56:39 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 15:56:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301201524029823> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:56:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301192963488794> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:56:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301195584899068> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:56:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301191843560021> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:56:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309614301201645696064> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:56:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301201322725252> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 15:57:14 [scrapy.extensions.logstats] INFO: Crawled 19 pages (at 2 pages/min), scraped 2 items (at 2 items/min)
+2018-10-31 15:58:04 [scrapy.extensions.logstats] INFO: Crawled 22 pages (at 3 pages/min), scraped 2 items (at 0 items/min)
+2018-10-31 15:59:07 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 4 pages/min), scraped 2 items (at 0 items/min)
+2018-10-31 15:59:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 15:59:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 762216,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 26,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 7, 59, 7, 204923),
+ 'item_scraped_count': 2,
+ 'log_count/ERROR': 7,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'scheduler/dequeued': 26,
+ 'scheduler/dequeued/memory': 26,
+ 'scheduler/enqueued': 26,
+ 'scheduler/enqueued/memory': 26,
+ 'spider_exceptions/AttributeError': 7,
+ 'start_time': datetime.datetime(2018, 10, 31, 7, 52, 59, 411620)}
+2018-10-31 15:59:07 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 16:13:21 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 16:13:21 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 16:13:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 16:13:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 16:13:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 16:13:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 16:13:22 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 16:13:22 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 16:13:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:13:23 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 16:14:24 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:14:36 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 16:14:36 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 16:14:36 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 16:14:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 16:14:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 16:14:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 16:14:37 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 16:14:37 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 16:14:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:14:37 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 16:15:38 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:16:39 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:17:40 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:18:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 16:18:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 986,
+ 'downloader/response_count': 17,
+ 'downloader/response_status_count/200': 17,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 8, 18, 5, 51866),
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 17,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 10, 31, 8, 14, 37, 355798)}
+2018-10-31 16:18:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 16:20:46 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 16:20:46 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 16:20:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 16:20:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 16:20:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 16:20:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 16:20:47 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 16:20:47 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 16:20:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:20:47 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 16:21:48 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:22:50 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:23:51 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:24:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 16:24:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 986,
+ 'downloader/response_count': 17,
+ 'downloader/response_status_count/200': 17,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 8, 24, 16, 555640),
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 17,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 10, 31, 8, 20, 47, 480755)}
+2018-10-31 16:24:16 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 16:47:13 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 16:47:13 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 16:47:13 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 16:47:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 16:47:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 16:47:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 16:47:15 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 16:47:15 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 16:47:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:47:15 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 16:48:18 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:48:35 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 16:48:35 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 16:48:35 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 16:48:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 16:48:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 16:48:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 16:48:36 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 16:48:36 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 16:48:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:48:36 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 16:49:37 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:50:38 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:51:40 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:52:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 16:52:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 986,
+ 'downloader/response_count': 17,
+ 'downloader/response_status_count/200': 17,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 8, 52, 5, 49314),
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 17,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 10, 31, 8, 48, 36, 15763)}
+2018-10-31 16:52:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 16:54:05 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 16:54:05 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 16:54:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 16:54:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 16:54:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 16:54:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 16:54:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 16:54:06 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 16:54:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:54:06 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 16:55:07 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:55:22 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 16:55:22 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 16:55:22 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 16:55:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 16:55:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 16:55:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 16:55:22 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 16:55:22 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 16:55:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:55:22 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 16:56:24 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:57:25 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:58:27 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 16:58:52 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 16:58:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 986,
+ 'downloader/response_count': 17,
+ 'downloader/response_status_count/200': 17,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 8, 58, 52, 149082),
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 17,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 10, 31, 8, 55, 22, 779778)}
+2018-10-31 16:58:52 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 17:01:06 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 17:01:06 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 17:01:06 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 17:01:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 17:01:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 17:01:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 17:01:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 17:01:06 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 17:01:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:01:06 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 17:02:13 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:03:08 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:04:08 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:05:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 17:05:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 361968,
+ 'downloader/response_count': 17,
+ 'downloader/response_status_count/200': 17,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 9, 5, 3, 881674),
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 17,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 10, 31, 9, 1, 6, 946274)}
+2018-10-31 17:05:03 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 17:06:37 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 17:06:37 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 17:06:37 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 17:06:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 17:06:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 17:06:38 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 17:06:38 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 17:06:38 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 17:06:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:06:38 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 17:06:46 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 17:06:46 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 17:06:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 17:06:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 17:06:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 17:06:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 17:06:47 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 17:06:47 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 17:06:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:06:47 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 17:07:59 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:09:01 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:11:55 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 17:11:55 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 17:11:55 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 17:11:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 17:11:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 17:11:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 17:11:57 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 17:11:57 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 17:11:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:11:57 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 17:12:36 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 17:12:36 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 17:12:36 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 17:12:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 17:12:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 17:12:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 17:12:36 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 17:12:36 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 17:12:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:12:36 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 17:13:48 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:16:28 [scrapy.extensions.logstats] INFO: Crawled 17 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:16:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301164358301026> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:16:42 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:16:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301146373114671> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:16:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309351000894301146108864813> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:16:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301146331170559> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:16:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301189280886154> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:16:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301158016493137> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:16:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301116312548686> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:16:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301204120309743> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 53, in parse_item
+    time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-10-31 17:17:41 [scrapy.extensions.logstats] INFO: Crawled 22 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:18:24 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 17:18:24 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 630992,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 25,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 9, 18, 24, 303488),
+ 'log_count/ERROR': 8,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 25,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'spider_exceptions/AttributeError': 8,
+ 'start_time': datetime.datetime(2018, 10, 31, 9, 12, 36, 888976)}
+2018-10-31 17:18:24 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-10-31 17:20:11 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-10-31 17:20:11 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-10-31 17:20:11 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-10-31 17:20:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-10-31 17:20:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-10-31 17:20:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-10-31 17:20:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-10-31 17:20:12 [scrapy.core.engine] INFO: Spider opened
+2018-10-31 17:20:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:20:12 [py.warnings] WARNING: C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-10-31 17:21:29 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:23:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301150856817016> (referer: https://weibo.com/?category=7)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:24:10 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:24:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301213213580002> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301217818873486> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301225263804640> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301224001281500> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301224794001257> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301220931101848> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301224009670802> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301222717826289> (referer: https://weibo.com/?category=10018)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:06 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:26:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301115893103588> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:20 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:26:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301143449718923> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404300687667287353> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301131487516681> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404300775701481539> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301119298866389> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301141449044257> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:26:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://weibo.com/ttarticle/p/show?id=2309404301114018258596> (referer: https://weibo.com/?category=1760)
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\admin\PycharmProjects\text\venv\lib\site-packages\scrapy\spiders\crawl.py", line 82, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\spiders\text.py", line 92, in parse_item
+    item['time'] = time
+NameError: name 'time' is not defined
+2018-10-31 17:27:20 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-10-31 17:28:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-10-31 17:28:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 971731,
+ 'downloader/response_count': 34,
+ 'downloader/response_status_count/200': 34,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 10, 31, 9, 28, 2, 797074),
+ 'log_count/ERROR': 17,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 34,
+ 'scheduler/dequeued': 34,
+ 'scheduler/dequeued/memory': 34,
+ 'scheduler/enqueued': 34,
+ 'scheduler/enqueued/memory': 34,
+ 'spider_exceptions/NameError': 17,
+ 'start_time': datetime.datetime(2018, 10, 31, 9, 20, 12, 537026)}
+2018-10-31 17:28:02 [scrapy.core.engine] INFO: Spider closed (finished)

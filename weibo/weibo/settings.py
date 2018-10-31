@@ -89,5 +89,5 @@ DOWNLOADER_MIDDLEWARES = {
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-LOG_FILE = "TencentSpider.log"
+LOG_FILE = "weiboSpider.log"
 LOG_LEVEL = "INFO"
