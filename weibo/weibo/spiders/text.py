@@ -89,6 +89,6 @@ class TextSpider(CrawlSpider):
         item['title'] = title
         item['author'] = author
         item['article'] = article
-        item['time'] = time
+        #item['time'] = time
         print('parse解决了', article)
         yield item
