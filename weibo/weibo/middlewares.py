@@ -7,6 +7,8 @@
 
 from scrapy import signals
 
+from fake_useragent import UserAgent
+
 
 class WeiboSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -101,3 +103,23 @@ class WeiboDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+class RandomUserAgent(object):
+
+    def __init__(self, crawler):
+        print(2)
+        super(RandomUserAgent, self).__init__()
+        self.ua = UserAgent()
+        self.ua_type = crawler.settings.get('RANSOM_UA_TYPE','random')
+
+    @classmethod
+    def from_crawl(cls, crawler):
+        print(1)
+        return cls(crawler)
+
+    def process_request(self, request, spider):
+
+        def get_ua():
+            return getattr('self.ua', self.ua_type)
+        request.headers.setdefault('User_Agent', get_ua())
+        return None

@@ -7,14 +7,15 @@ from scrapy.http import HtmlResponse
 import time
 import os
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
 PhantomJS_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + r'/phantomjs-2.1.1-windows/bin/phantomjs'
+from fake_useragent import UserAgent
 
 
 class JavaScriptMiddleware(object):
     page_image = 0
 
     def process_request(self, request, spider):
+        print(4)
         if spider.name == "text":
             header_dict = dict(DesiredCapabilities.PHANTOMJS)
             header_dict['phantomjs.page.settings.userAgent'] = \
@@ -42,7 +43,7 @@ class JavaScriptMiddleware(object):
                     WBStorage=e8781eb7dee3fd7f|undefined
                 '''
             header_dict["phantomjs.page.settings.disk-cache"] = True
-            #service_args = ['--proxy=127.0.0.1:9999', '--proxy-type=socks5']
+            # service_args = ['--proxy=127.0.0.1:9999', '--proxy-type=socks5']
             driver = webdriver.PhantomJS(desired_capabilities=header_dict,
                                          executable_path=PhantomJS_path,
                                          )  # 指定使用的浏览器
@@ -59,3 +60,34 @@ class JavaScriptMiddleware(object):
             return HtmlResponse(driver.current_url, body=body, encoding='utf-8', request=request)
         else:
             return {}
+
+    def process_response(self, request, response, spider):
+
+        new = response.xpath("string(.)").extract()[0]
+        # new_dict = re.match(r'<body>({.*?})</em>', new)
+        # print(eval(new)['data'])
+        response = eval(new)['data']
+        return response
+
+
+class RandomUserAgent(object):
+
+    def __init__(self, crawler):
+        super(RandomUserAgent, self).__init__()
+        print(2)
+
+        self.ua = UserAgent()
+        self.ua_type = crawler.settings.get('RANSOM_UA_TYPE', 'random')
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        print(1)
+        return cls(crawler)
+
+    def process_request(self, request, spider):
+        def get_ua():
+            print(3)
+            return getattr('self.ua', self.ua_type)
+
+        request.headers.setdefault('User-Agent', get_ua())
+        #return None

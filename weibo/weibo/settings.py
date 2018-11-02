@@ -55,6 +55,7 @@ DOWNLOADER_MIDDLEWARES = {
     # 'weibo.middlewares.WeiboDownloaderMiddleware': 543,
     'weibo.middlewares.middleware.JavaScriptMiddleware': 543,  # 键为中间件类的路径，值为中间件的顺序
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,  # 禁止内置的中间件
+    'weibo.middlewares.middleware.RandomUserAgent':1, #值越低，优先级越高
 }
 
 # Enable or disable extensions
@@ -91,3 +92,5 @@ DOWNLOADER_MIDDLEWARES = {
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 LOG_FILE = "weiboSpider.log"
 LOG_LEVEL = "INFO"
+
+RANDOM_UA_TYPE = 'random'

@@ -19,13 +19,13 @@ class TextSpider(CrawlSpider):
     name = 'text'
     allowed_domains = ['weibo.com']
     start_urls = [
-        'https://weibo.com/?category=12',
-        'https://weibo.com/?category=7',
-        'https://weibo.com/?category=10018',
-        'https://weibo.com/?category=10007',
-        'https://weibo.com/?category=1760',
-        'https://weibo.com/?category=novelty',
-        'https://weibo.com/?category=99991',
+        # 'https://weibo.com/?category=12',
+        # 'https://weibo.com/?category=7',
+        # 'https://weibo.com/?category=10018',
+        # 'https://weibo.com/?category=10007',
+        # 'https://weibo.com/?category=1760',
+        # 'https://weibo.com/?category=novelty',
+        # 'https://weibo.com/?category=99991',
     ]
     start_urls = append_url(start_urls)
     rules = (
@@ -41,6 +41,12 @@ class TextSpider(CrawlSpider):
                 restrict_xpaths='//div[@class="UG_list_b"]'),
             callback='parse_item',
             follow=True, ),
+        Rule(
+            LinkExtractor(
+                #allow=r'id=\d+',
+                restrict_xpaths='//div[@class="UG_slider"]/ul[@action-type="header_slider"]/li/a'),
+            callback='parse_item',
+            follow=True, ),
     )
 
     def parse_item(self, response):
@@ -54,12 +60,12 @@ class TextSpider(CrawlSpider):
         # time = time_list[1] + ' ' + time_list[2]
         if title == None:
             print('进来了')
-            print('2 response', response,response.url)
+            print('2 response', response,response.body.decode('utf8'))
             response = response.xpath('//body')
             title = response.xpath(
-                r'//div[@node-type="articleTitle"]/text()').extract_first()
+                r'//div[@node-type="articleTitle"]/text() | //head/title/text()').extract_first()
             if title == None:
-                print(response.body)
+                print('response.body:',response.body.decode('utf8'))
             print('2 title', title)
             author = response.xpath(r"//em[@class='W_autocut']/text()").extract_first()
             # time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
