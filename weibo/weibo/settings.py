@@ -53,9 +53,9 @@ ROBOTSTXT_OBEY = False
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     # 'weibo.middlewares.WeiboDownloaderMiddleware': 543,
-    'weibo.middlewares.middleware.JavaScriptMiddleware': 543,  # 键为中间件类的路径，值为中间件的顺序
+    'weibo.middlewares.middleware.JavaScriptMiddleware': 1,  # 键为中间件类的路径，值为中间件的顺序
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,  # 禁止内置的中间件
-    'weibo.middlewares.middleware.RandomUserAgent':1, #值越低，优先级越高
+    'weibo.middlewares.middleware.RandomUserAgent':2, #值越低，优先级越高
 }
 
 # Enable or disable extensions

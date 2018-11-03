@@ -1,6 +1,6 @@
 import time
 import requests
-import re
+#import re
 
 # url = '''https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fttarticle%2Fp%2Fshow%3Fid%3D2309404298262772365509&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28'''
 # # print(time.time())
@@ -40,17 +40,18 @@ import re
 # print(time.time())
 # r1 = requests.post('https://weibo.com/ttarticle/p/show?id=2309404300906412821509')
 
-sess = requests.session()
-ret = sess.get('https://weibo.com/ttarticle/p/show?id=2309404298262772365509')
+#sess = requests.session()
+#ret = sess.get('https://weibo.com/ttarticle/p/show?id=2309404298262772365509')
 # r1 = requests.post('https://weibo.com/ttarticle/p/show?id=2309404298262772365509')
 
 url = 'https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fttarticle%2Fp%2Fshow%3Fid%3D2309404298262772365509&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand={0}'.format(time.time())
-sess.get(url)
+url_3 = 'https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=3&lefnav=0&cursor='
+re = requests.get(url_3)
 # https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fttarticle%2Fp%2Fshow%3Fid%3D2309404298262772365509&domain=.weibo.com&ua=php-sso_sdk_client-0.6.28&_rand=1540993314.8047
-ret = sess.get('https://weibo.com/ttarticle/p/show?id=2309404298262772365509')
+#ret = sess.get('https://weibo.com/ttarticle/p/show?id=2309404298262772365509')
 
 with open('a.html', 'w+') as f:
-    f.write(ret.content.decode('gbk'))
+    f.write(re.content.decode('gbk'))
 
 # print(time.time())
 # print(unquote(r1.url,'utf8'))
