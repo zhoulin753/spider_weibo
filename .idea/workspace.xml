@@ -3,24 +3,54 @@
   <component name="ChangeListManager">
     <list default="true" id="c68bfe85-aead-43ac-b7d2-e75fba6a5108" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/a.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/cc.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/cc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/a1.html" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/a1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/ghostdriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo10.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo11.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo12.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo13.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo3.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo4.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo5.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo6.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo7.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo8.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo9.png" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo/spiders/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo/spiders/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/weibo9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/weiboSpider.log" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weiboSpider.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +62,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/spider_dome$middleware.coverage" NAME="middleware Coverage Results" MODIFIED="1540952567572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo/weibo/middlewares" />
-    <SUITE FILE_PATH="coverage/spider_dome$start.coverage" NAME="start Coverage Results" MODIFIED="1541240414549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
+    <SUITE FILE_PATH="coverage/spider_dome$start.coverage" NAME="start Coverage Results" MODIFIED="1541327290230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
     <SUITE FILE_PATH="coverage/spider_dome$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1541065639488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
     <SUITE FILE_PATH="coverage/spider_dome$text.coverage" NAME="text Coverage Results" MODIFIED="1541067365956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
     <SUITE FILE_PATH="coverage/spider_dome$cc.coverage" NAME="cc Coverage Results" MODIFIED="1541215441215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
@@ -56,22 +86,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo/weibo/settings.py">
+      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+            <state relative-caret-position="273">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <folding>
+                <element signature="e#64#94#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/request/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="79" column="62" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+            <state relative-caret-position="149">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo/a1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="174" selection-start-line="9" selection-start-column="109" selection-end-line="9" selection-end-column="174" />
               <folding>
-                <element signature="e#64#94#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +122,8 @@
       <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/core/downloader/middleware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="244">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -89,16 +131,9 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/response/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="880">
               <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/response/html.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26" />
           </provider>
         </entry>
       </file>
@@ -114,20 +149,41 @@
       <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo/weibo/spiders/text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="-1508">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
-                <element signature="e#24#37#0" expanded="true" />
+                <element signature="e#25#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weiboSpider.log" pinned="false" current-in-tab="true">
+      <file leaf-file-name="a.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo/weibo/a.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weiboSpider.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo/weiboSpider.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="3144" column="52" selection-start-line="3144" selection-start-column="52" selection-end-line="3144" selection-end-column="52" />
+            <state relative-caret-position="197">
+              <caret line="1063" column="34" lean-forward="true" selection-start-line="1063" selection-start-column="34" selection-end-line="1063" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo/cc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,17 +208,18 @@
         <option value="$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/__init__.py" />
         <option value="$PROJECT_DIR$/weibo/TencentSpider.log" />
         <option value="$PROJECT_DIR$/weibo/weibo/pipelines.py" />
-        <option value="$PROJECT_DIR$/weibo/weibo/spiders/text.py" />
         <option value="$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/crawl.py" />
         <option value="$PROJECT_DIR$/weibo/text.py" />
         <option value="$PROJECT_DIR$/new.html" />
         <option value="$PROJECT_DIR$/weibo/weibo/a.html" />
         <option value="$PROJECT_DIR$/weibo/weibo/middlewares.py" />
-        <option value="$PROJECT_DIR$/weibo/weiboSpider.log" />
         <option value="$PROJECT_DIR$/weibo/cc.py" />
         <option value="$PROJECT_DIR$/weibo/a.html" />
         <option value="$PROJECT_DIR$/weibo/weibo/settings.py" />
         <option value="$PROJECT_DIR$/weibo/weibo/items.py" />
+        <option value="$PROJECT_DIR$/weibo/a1.html" />
+        <option value="$PROJECT_DIR$/weibo/weiboSpider.log" />
+        <option value="$PROJECT_DIR$/weibo/weibo/spiders/text.py" />
         <option value="$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py" />
       </list>
     </option>
@@ -176,7 +233,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="851" />
@@ -189,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,6 +257,12 @@
               <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
               <item name="spider-dome" type="462c0819:PsiDirectoryNode" />
               <item name="weibo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spider-dome" type="462c0819:PsiDirectoryNode" />
+              <item name="weibo" type="462c0819:PsiDirectoryNode" />
+              <item name="phantomjs-2.1.1-windows" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
@@ -290,7 +352,7 @@
               <item name="Lib" type="462c0819:PsiDirectoryNode" />
               <item name="site-packages" type="462c0819:PsiDirectoryNode" />
               <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="downloadermiddlewares" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
@@ -301,6 +363,7 @@
               <item name="site-packages" type="462c0819:PsiDirectoryNode" />
               <item name="scrapy" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
@@ -317,6 +380,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,16 +515,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.0" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34876034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2446281" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.91900826" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49309665" visible="true" weight="0.23146747" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49309665" visible="true" weight="0.26399395" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
@@ -487,49 +551,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo/weibo/spiders/text.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo/weibo/spiders/text.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/weibo/weibo/spiders/text.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weibo/weibo15.png" />
-    <entry file="file://$PROJECT_DIR$/weibo/weibo16.png" />
     <entry file="file://$PROJECT_DIR$/weibo/weibo17.png" />
     <entry file="file://$PROJECT_DIR$/weibo/weibo19.png" />
     <entry file="file://$PROJECT_DIR$/weibo/weibo18.png" />
@@ -572,13 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/weibo/a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -625,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1300">
           <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,17 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4460">
           <caret line="233" selection-start-line="233" selection-end-line="233" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="515" column="206" selection-start-line="515" selection-start-column="206" selection-end-line="515" selection-end-column="206" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#10755#10759#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,16 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/cc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/selector/unified.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -707,19 +701,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/a1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6977" selection-start-column="6977" selection-end-column="6977" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weibo/weibo/ghostdriver.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/weibo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="1220">
           <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
         </state>
       </provider>
@@ -731,27 +718,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/weibo/spiders/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/core/downloader/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/response/html.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/response/text.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -762,25 +730,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/response/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="880">
           <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py">
+    <entry file="file://$PROJECT_DIR$/weibo/cc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="79" column="62" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+        <state relative-caret-position="385">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
-            <element signature="e#64#94#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/core/downloader/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/weibo12.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="515" column="206" selection-start-line="515" selection-start-column="206" selection-end-line="515" selection-end-column="206" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#10755#10759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/weibo/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/weiboSpider.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="3144" column="52" selection-start-line="3144" selection-start-column="52" selection-end-line="3144" selection-end-column="52" />
+        <state relative-caret-position="197">
+          <caret line="1063" column="34" lean-forward="true" selection-start-line="1063" selection-start-column="34" selection-end-line="1063" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/request/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/a1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="174" selection-start-line="9" selection-start-column="109" selection-end-line="9" selection-end-column="174" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/weibo/spiders/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1508">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#25#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="e#64#94#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

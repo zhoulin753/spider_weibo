@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-import scrapy
+
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from weibo.items import WeiboItem
-import json
+
 
 def append_url(list):
     page = 3
-    for i in range(10):
+    for i in range(10000):
         url = r'https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page={}&lefnav=0&cursor='.format(
             page)
         page += 1
@@ -19,22 +19,24 @@ class TextSpider(CrawlSpider):
     name = 'text'
     allowed_domains = ['weibo.com']
     start_urls = [
-        # 'https://weibo.com/?category=12',
-        # 'https://weibo.com/?category=7',
-        # 'https://weibo.com/?category=10018',
-        # 'https://weibo.com/?category=10007',
-        # 'https://weibo.com/?category=1760',
-        # 'https://weibo.com/?category=novelty',
-        # 'https://weibo.com/?category=99991',
+        'https://weibo.com/?category=12',
+        'https://weibo.com/?category=7',
+        'https://weibo.com/?category=10018',
+        'https://weibo.com/?category=10007',
+        'https://weibo.com/?category=1760',
+        'https://weibo.com/?category=novelty',
+        'https://weibo.com/?category=99991',
     ]
+    '''
+    这个方法append_url方法时专门start_url列表中的，添加的原因是，当页面下滚时，我们要重新
+    发送一个url
+    '''
     start_urls = append_url(start_urls)
+    '''
+    rules这个方法是是专门从原来的网页中提取我们的url的
+    '''
     rules = (
-        # Rule(
-        #     LinkExtractor(
-        #         allow=r'id=\d+',
-        #         restrict_xpaths='//h3[@class="list_title_b"]/a'),
-        #     callback='parse_item',
-        #     follow=True, ),
+
         Rule(
             LinkExtractor(
                 allow=r'id=\d+',
@@ -50,7 +52,7 @@ class TextSpider(CrawlSpider):
     )
 
     def parse_item(self, response):
-
+        '''这个方法是专门从我们的网页中提取信息的'''
         print('1', response,response.url)
         title = response.xpath(
             r'//div[@node-type="articleTitle"]/text()').extract_first()
@@ -60,12 +62,12 @@ class TextSpider(CrawlSpider):
         # time = time_list[1] + ' ' + time_list[2]
         if title == None:
             print('进来了')
-            print('2 response', response,response.body.decode('utf8'))
+            print('2 response', response)
             response = response.xpath('//body')
             title = response.xpath(
                 r'//div[@node-type="articleTitle"]/text() | //head/title/text()').extract_first()
             if title == None:
-                print('response.body:',response.body.decode('utf8'))
+                print('response.body: None')
             print('2 title', title)
             author = response.xpath(r"//em[@class='W_autocut']/text()").extract_first()
             # time_list = response.xpath(r'//span[@class="time"]/text()').extract_first().split(' ')
@@ -83,11 +85,9 @@ class TextSpider(CrawlSpider):
             r'//div[@node-type="contentBody"]/p/text()'
         ]
         for i in xpath_list:
+            '''循环搜索每个网页中信息'''
             article_list = response.xpath(i)
-            # print('i:',i)
-            # print('article_list_in:',article_list)
             if article_list != []:
-                # print(article_list)
                 break
 
         article = ''
