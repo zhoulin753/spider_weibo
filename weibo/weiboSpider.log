@@ -2620,3 +2620,689 @@ Traceback (most recent call last):
     ^
 SyntaxError: invalid syntax
 2018-11-04 18:29:22 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2018-11-04 21:30:16 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-11-04 21:30:16 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-7-6.1.7601-SP1
+2018-11-04 21:30:16 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-11-04 21:30:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-04 21:30:31 [fake_useragent] WARNING: Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.11
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\urllib\request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Python 3.6\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python 3.6\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python 3.6\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python 3.6\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Python 3.6\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Python 3.6\lib\http\client.py", line 1392, in connect
+    super().connect()
+  File "C:\Python 3.6\lib\http\client.py", line 936, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Python 3.6\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Python 3.6\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "C:\Python 3.6\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Python 3.6\lib\urllib\request.py", line 526, in open
+    response = self._open(req, data)
+  File "C:\Python 3.6\lib\urllib\request.py", line 544, in _open
+    '_open', req)
+  File "C:\Python 3.6\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Python 3.6\lib\urllib\request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Python 3.6\lib\urllib\request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\fake_useragent\utils.py", line 154, in load
+    for item in get_browsers(verify_ssl=verify_ssl):
+  File "C:\Python 3.6\lib\site-packages\fake_useragent\utils.py", line 97, in get_browsers
+    html = get(settings.BROWSERS_STATS_PAGE, verify_ssl=verify_ssl)
+  File "C:\Python 3.6\lib\site-packages\fake_useragent\utils.py", line 84, in get
+    raise FakeUserAgentError('Maximum amount of retries reached')
+fake_useragent.errors.FakeUserAgentError: Maximum amount of retries reached
+2018-11-04 21:30:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'weibo.middlewares.middleware.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-04 21:30:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-04 21:30:35 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-11-04 21:30:35 [scrapy.core.engine] INFO: Spider opened
+2018-11-04 21:30:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-04 21:30:36 [py.warnings] WARNING: C:\Python 3.6\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-11-04 21:31:06 [py.warnings] WARNING: C:\Python 3.6\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-11-04 21:31:18 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=7>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:31:48 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2018-11-04 21:32:18 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/?category=1760>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:34:19 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404232016534098055>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:34:19 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-11-04 21:34:19 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302732889597977>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:34:19 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302729773246245>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:34:19 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302739197824377>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:34:46 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 2 pages/min), scraped 5 items (at 5 items/min)
+2018-11-04 21:37:09 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302640833022209>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:39:00 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 12 pages/min), scraped 5 items (at 0 items/min)
+2018-11-04 21:39:00 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302618292794251>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:39:00 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302617063879912>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:40:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302636542250409>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:40:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302644331066703>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:40:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309351002454302639662771953>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:40:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302653222997366>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:40:46 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302654091173458>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:42:29 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309351002454302218701477883>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:42:29 [scrapy.extensions.logstats] INFO: Crawled 38 pages (at 13 pages/min), scraped 11 items (at 6 items/min)
+2018-11-04 21:42:29 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404301922772320443>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:44:13 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302568451923111>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:44:13 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302579042490972>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:44:13 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302598504109402>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:44:13 [scrapy.extensions.logstats] INFO: Crawled 45 pages (at 7 pages/min), scraped 20 items (at 9 items/min)
+2018-11-04 21:45:57 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302402080649865>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:45:57 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302393494924236>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:47:43 [scrapy.extensions.logstats] INFO: Crawled 55 pages (at 10 pages/min), scraped 25 items (at 5 items/min)
+2018-11-04 21:47:43 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302387316718129>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:47:43 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302485182393781>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:47:43 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302446917764427>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:47:43 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309351002454302558834374424>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:49:03 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302246002187769>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:49:03 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302408300782605>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:49:03 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309351002254302412130179108>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:49:03 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302389006965028>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:51:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302360624150401>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:51:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302418119664792>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:51:10 [scrapy.extensions.logstats] INFO: Crawled 67 pages (at 12 pages/min), scraped 35 items (at 10 items/min)
+2018-11-04 21:53:20 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302358149467774>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:53:20 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302323017989881>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:53:20 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302379800486752>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:53:20 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302328072111295>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:55:09 [scrapy.extensions.logstats] INFO: Crawled 77 pages (at 10 pages/min), scraped 43 items (at 8 items/min)
+2018-11-04 21:55:09 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302349517630765>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:55:09 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302347378516803>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+2018-11-04 21:56:59 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309351002454302341628121257>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:56:59 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302350285178035>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:56:59 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309351000404302342232125422>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:56:59 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302343695947733>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-04 21:56:59 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404302303837436254>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 46, in process_response
+    https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 53, in response_new
+    return response
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
