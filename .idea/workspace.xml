@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c68bfe85-aead-43ac-b7d2-e75fba6a5108" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/weibo/weibo/getip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/a1.html" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/a1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/ghostdriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo/spiders/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weibo/spiders/text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weiboSpider.log" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/weiboSpider.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,6 +16,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/spider_dome$middleware.coverage" NAME="middleware Coverage Results" MODIFIED="1540952567572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo/weibo/middlewares" />
     <SUITE FILE_PATH="coverage/spider_dome$start.coverage" NAME="start Coverage Results" MODIFIED="1541327290230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
+    <SUITE FILE_PATH="coverage/spider_dome$getip.coverage" NAME="getip Coverage Results" MODIFIED="1541401920048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo/weibo" />
     <SUITE FILE_PATH="coverage/spider_dome$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1541065639488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
     <SUITE FILE_PATH="coverage/spider_dome$text.coverage" NAME="text Coverage Results" MODIFIED="1541067365956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
     <SUITE FILE_PATH="coverage/spider_dome$cc.coverage" NAME="cc Coverage Results" MODIFIED="1541215441215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibo" />
@@ -86,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="491">
+              <caret line="93" column="19" lean-forward="true" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
               <folding>
                 <element signature="e#64#94#0" expanded="true" />
               </folding>
@@ -98,11 +52,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="crawl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/crawl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-899">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/request/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="860">
+              <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getip.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weibo/weibo/getip.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+              <folding>
+                <element signature="e#61#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/requests/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-959">
+              <folding>
+                <element signature="e#871#885#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unified.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/selector/unified.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -119,37 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/core/downloader/middleware.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/response/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/response/text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo/weibo/spiders/text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1508">
+            <state relative-caret-position="120">
               <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
                 <element signature="e#25#72#0" expanded="true" />
@@ -158,32 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo/weibo/a.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="weiboSpider.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weibo/weiboSpider.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="1063" column="34" lean-forward="true" selection-start-line="1063" selection-start-column="34" selection-end-line="1063" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weibo/cc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="21260">
+              <caret line="1063" column="34" selection-start-line="1063" selection-start-column="34" selection-end-line="1063" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -221,6 +177,7 @@
         <option value="$PROJECT_DIR$/weibo/weiboSpider.log" />
         <option value="$PROJECT_DIR$/weibo/weibo/spiders/text.py" />
         <option value="$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py" />
+        <option value="$PROJECT_DIR$/weibo/weibo/getip.py" />
       </list>
     </option>
   </component>
@@ -233,7 +190,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="851" />
@@ -279,13 +236,6 @@
             </path>
             <path>
               <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spider-dome" type="462c0819:PsiDirectoryNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="weibo" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -321,60 +271,7 @@
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="Lib" type="462c0819:PsiDirectoryNode" />
               <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (text) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (text) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="downloader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (text) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (text) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spider-dome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (text) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
+              <item name="requests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -406,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.start">
+  <component name="RunManager" selected="Python.getip">
     <configuration name="a.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/spider-dome/weibo/weibo/a.html" />
     <configuration name="cc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider-dome" />
@@ -427,7 +324,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="start (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="getip" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider-dome" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -435,12 +332,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weibo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weibo/weibo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weibo/start.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weibo/weibo/getip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -486,18 +383,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.start" />
-      <item itemvalue="Python.start (1)" />
       <item itemvalue="Python.text" />
       <item itemvalue="JavaScript Debug.a.html" />
       <item itemvalue="Python.cc" />
+      <item itemvalue="Python.getip" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.getip" />
         <item itemvalue="Python.start" />
         <item itemvalue="Python.cc" />
         <item itemvalue="JavaScript Debug.a.html" />
         <item itemvalue="Python.text" />
-        <item itemvalue="Python.start (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -516,15 +413,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.0" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2446281" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3322314" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.91900826" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49309665" visible="true" weight="0.26399395" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49309665" visible="true" weight="0.2677761" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
@@ -555,8 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weibo/weibo17.png" />
-    <entry file="file://$PROJECT_DIR$/weibo/weibo19.png" />
     <entry file="file://$PROJECT_DIR$/weibo/weibo18.png" />
     <entry file="file://$PROJECT_DIR$/weibo/weibo20.png" />
     <entry file="file://$PROJECT_DIR$/weibo/weibo21.png" />
@@ -590,9 +486,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/weibo43.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/weibo43.png" />
     <entry file="file://$PROJECT_DIR$/weibo/text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -604,20 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="3951" column="6" selection-start-line="3951" selection-start-column="6" selection-end-line="3951" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/crawl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -680,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/selector/unified.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weibo/a.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-400">
@@ -737,7 +610,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/cc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
+        <state relative-caret-position="1080">
           <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -747,25 +620,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/core/downloader/middleware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="1160">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/weibo12.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="515" column="206" selection-start-line="515" selection-start-column="206" selection-end-line="515" selection-end-column="206" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#10755#10759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/weibo12.png" />
+    <entry file="file://$PROJECT_DIR$/new.html" />
     <entry file="file://$PROJECT_DIR$/weibo/weibo/a.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -775,15 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/weiboSpider.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="1063" column="34" lean-forward="true" selection-start-line="1063" selection-start-column="34" selection-end-line="1063" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/request/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="21260">
+          <caret line="1063" column="34" selection-start-line="1063" selection-start-column="34" selection-end-line="1063" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -799,7 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/weibo/spiders/text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1508">
+        <state relative-caret-position="120">
           <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
             <element signature="e#25#72#0" expanded="true" />
@@ -807,12 +661,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/crawl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-899">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/http/request/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/scrapy/selector/unified.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weibo/weibo/middlewares/middleware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="491">
+          <caret line="93" column="19" lean-forward="true" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
           <folding>
             <element signature="e#64#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../text/venv/Lib/site-packages/requests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-959">
+          <folding>
+            <element signature="e#871#885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/weibo/getip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="e#61#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
