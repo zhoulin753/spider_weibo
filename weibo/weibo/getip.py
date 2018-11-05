@@ -3,7 +3,7 @@
 #time:2018/11/5
 import requests
 from scrapy.selector import Selector
-
+from scrapy.http import HtmlResponse
 class GetIp(object):
 
     def __init__(self):
@@ -21,8 +21,12 @@ class GetIp(object):
 
     def get_ip(self):
         response = self.send_requset()
-        hide = response.xpath('//tr[@class]/tb[5]')
-        ip = hide.xpath('../tr[@class]/tb[2]')
-        print(response.body)
+        tr_every = response.xpath('//tr')[1:]
+        # print(response)
+        for   i in tr_every:
+            print(i.xpath('//tr[1]/td/text()').extract())
+            if i.xpath('//td[4]/text()').extract() == '高匿':
+
+                print('高匿:',i.xpath('//td[2]/text()').extract())
 a = GetIp()
 a.get_ip()
