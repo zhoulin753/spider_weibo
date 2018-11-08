@@ -3306,3 +3306,91 @@ Traceback (most recent call last):
     
     ^
 SyntaxError: unexpected EOF while parsing
+2018-11-08 15:53:47 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: weibo)
+2018-11-08 15:53:47 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-7-6.1.7601-SP1
+2018-11-08 15:53:47 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'weibo', 'LOG_FILE': 'weiboSpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weibo.spiders', 'SPIDER_MODULES': ['weibo.spiders']}
+2018-11-08 15:53:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-08 15:53:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['weibo.middlewares.middleware.JavaScriptMiddleware',
+ 'weibo.middlewares.middleware.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-08 15:53:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-08 15:53:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-11-08 15:53:51 [scrapy.core.engine] INFO: Spider opened
+2018-11-08 15:53:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-11-08 15:53:51 [py.warnings] WARNING: C:\Python 3.6\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-11-08 15:56:32 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 14 pages/min), scraped 0 items (at 0 items/min)
+2018-11-08 15:58:42 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 11 pages/min), scraped 1 items (at 1 items/min)
+2018-11-08 15:59:04 [scrapy.extensions.logstats] INFO: Crawled 27 pages (at 2 pages/min), scraped 10 items (at 9 items/min)
+2018-11-08 15:59:04 [py.warnings] WARNING: C:\Python 3.6\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-11-08 16:00:52 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 9 pages/min), scraped 18 items (at 8 items/min)
+2018-11-08 16:03:23 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404304027503440908>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 49, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 57, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-08 16:05:31 [scrapy.extensions.logstats] INFO: Crawled 55 pages (at 19 pages/min), scraped 26 items (at 8 items/min)
+2018-11-08 16:09:31 [scrapy.extensions.logstats] INFO: Crawled 72 pages (at 17 pages/min), scraped 34 items (at 8 items/min)
+2018-11-08 16:09:31 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404303747521100150>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 49, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 57, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-08 16:12:31 [scrapy.extensions.logstats] INFO: Crawled 86 pages (at 14 pages/min), scraped 49 items (at 15 items/min)
+2018-11-08 16:16:36 [scrapy.extensions.logstats] INFO: Crawled 104 pages (at 18 pages/min), scraped 64 items (at 15 items/min)
+2018-11-08 16:16:36 [scrapy.core.scraper] ERROR: Error downloading <GET https://weibo.com/ttarticle/p/show?id=2309404303770833032502>
+Traceback (most recent call last):
+  File "C:\Python 3.6\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Python 3.6\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 49, in process_response
+    response = self.response_new(response.url,request)
+  File "C:\Users\Administrator\PycharmProjects\spider_weibo\weibo\weibo\middlewares\middleware.py", line 57, in response_new
+    re_text = eval(re.text)['data']
+  File "<string>", line 1
+    <!DOCTYPE html>
+    ^
+SyntaxError: invalid syntax
+2018-11-08 16:19:59 [scrapy.extensions.logstats] INFO: Crawled 122 pages (at 18 pages/min), scraped 77 items (at 13 items/min)
+2018-11-08 16:23:20 [scrapy.extensions.logstats] INFO: Crawled 140 pages (at 18 pages/min), scraped 93 items (at 16 items/min)
