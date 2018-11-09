@@ -3,7 +3,7 @@
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from weibo.items import WeiboItem
-
+'101.80.188.242'
 
 def append_url(list):
     page = 3
@@ -26,6 +26,7 @@ class TextSpider(CrawlSpider):
         'https://weibo.com/?category=1760',
         'https://weibo.com/?category=novelty',
         'https://weibo.com/?category=99991',
+
     ]
     '''
     这个方法append_url方法时专门start_url列表中的，添加的原因是，当页面下滚时，我们要重新

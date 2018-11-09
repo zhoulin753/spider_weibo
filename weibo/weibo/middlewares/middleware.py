@@ -90,8 +90,22 @@ class RandomUserAgent(object):
         def get_ua():
             return getattr(self.ua, self.ua_type)
         #设置我们的request头
+        adder = self.get_ip().__next__()
+
+        request.meta['proxy'] = adder
+
+
         request.headers.setdefault('User-Agent', get_ua())
         return None
 
     def process_response(self, request, response, spider):
+
         return response
+
+    def get_ip(self):
+        with open(r'C:\Users\admin\PycharmProjects\spider-dome\weibo\weibo\add.text', 'r+') as f:
+            adder_list = f.read().split('\n')
+        print(adder_list)
+        for i in adder_list:
+
+            yield i
