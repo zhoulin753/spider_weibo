@@ -3,7 +3,9 @@
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from weibo.items import WeiboItem
+
 '101.80.188.242'
+
 
 def append_url(list):
     page = 3
@@ -46,7 +48,7 @@ class TextSpider(CrawlSpider):
             follow=True, ),
         Rule(
             LinkExtractor(
-                #allow=r'id=\d+',
+                # allow=r'id=\d+',
                 restrict_xpaths='//div[@class="UG_slider"]/ul[@action-type="header_slider"]/li/a'),
             callback='parse_item',
             follow=True, ),
@@ -54,7 +56,7 @@ class TextSpider(CrawlSpider):
 
     def parse_item(self, response):
         '''这个方法是专门从我们的网页中提取信息的'''
-        print('1', response,response.url)
+        print('1', response, response.url)
         title = response.xpath(
             r'//div[@node-type="articleTitle"]/text()').extract_first()
         print('1 title', title)
@@ -98,6 +100,6 @@ class TextSpider(CrawlSpider):
         item['title'] = title
         item['author'] = author
         item['article'] = article
-        #item['time'] = time
+        # item['time'] = time
         print('parse解决了', article)
         yield item

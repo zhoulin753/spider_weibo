@@ -7,7 +7,10 @@ from fake_useragent import UserAgent
 import time
 import sys
 import base64
+
 '''112.64.60.115'''
+
+
 # def base_code(username, password):
 #     str = '%s:%s' % (username, password)
 #     encodestr = base64.b64encode(str.encode('utf-8'))
@@ -15,13 +18,14 @@ import base64
 
 class GetIp(object):
     ua = UserAgent()
+
     def __init__(self):
         self.xici = 'http://www.xicidaili.com/wn/'
         self.page = 1
 
     def send_requset(self):
         header = {
-            'User-Agent': self.ua.random ,
+            'User-Agent': self.ua.random,
             # 'Accept - Encoding': 'gzip, deflate',
             # 'Accept-Language' :'zh-CN,zh;q=0.9',
             # 'Cache-Control':'max-age=0',
@@ -79,7 +83,6 @@ class GetIp(object):
         self.page += 1
         self.again_new_request()
 
-
     def again_new_request(self):
         if self.page == 2:
             self.xici = self.xici + str(self.page)
@@ -98,6 +101,8 @@ class GetIp(object):
                 write_str = 'a+'
             ip, port = adder
             with open('add.text', write_str) as f:
-                f.write(ip +':'+port + '\n')
+                f.write(ip + ':' + port + '\n')
+
+
 a = GetIp()
 a.send_requset()
