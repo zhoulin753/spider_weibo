@@ -1,0 +1,5 @@
+DNS：域名解析
+https://www.dytt8.net/===》
+
+pip install requests
+pip install lxml

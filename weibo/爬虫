@@ -1,0 +1,18 @@
+import requests #导入requests工具箱
+
+from lxml import etree
+
+
+re = requests.get('https://www.dytt8.net/')
+
+dytt8 = re.content.decode('gbk')
+
+dytt8_html = etree.HTML(dytt8)
+
+dytt8_list = dytt8_html.xpath(
+    '//div[@class="co_content2"]/ul/a/text()'
+)
+
+for i in dytt8_list:
+
+    print(i)

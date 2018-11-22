@@ -5,6 +5,9 @@ from scrapy.spiders import CrawlSpider, Rule
 from weibo.items import WeiboItem
 
 '101.80.188.242'
+import os
+from selenium import webdriver
+PhantomJS_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + r'/phantomjs-2.1.1-windows/bin/phantomjs.exe'
 
 
 def append_url(list):
@@ -34,6 +37,8 @@ class TextSpider(CrawlSpider):
     这个方法append_url方法时专门start_url列表中的，添加的原因是，当页面下滚时，我们要重新
     发送一个url
     '''
+    driver = webdriver.PhantomJS(executable_path=PhantomJS_path)  # 指定使用的浏览器
+
     start_urls = append_url(start_urls)
     '''
     rules这个方法是是专门从原来的网页中提取我们的url的

@@ -1,0 +1,22 @@
+[INFO  - 2018-11-22T07:23:46.469Z] GhostDriver - Main - running on port 54629
+[INFO  - 2018-11-22T07:23:48.934Z] Session [8e0ea5e0-ee27-11e8-9648-3b1037b247eb] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-11-22T07:23:48.934Z] Session [8e0ea5e0-ee27-11e8-9648-3b1037b247eb] - page.customHeaders:  - {}
+[INFO  - 2018-11-22T07:23:48.934Z] Session [8e0ea5e0-ee27-11e8-9648-3b1037b247eb] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-11-22T07:23:48.935Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 8e0ea5e0-ee27-11e8-9648-3b1037b247eb
+[ERROR - 2018-11-22T07:28:24.696Z] Session [8e0ea5e0-ee27-11e8-9648-3b1037b247eb] - page.onError - msg: KR: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) 升级您的浏览器，以便更好的视频观看体验！ [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-11-22T07:28:24.697Z] Session [8e0ea5e0-ee27-11e8-9648-3b1037b247eb] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2018-11-22T07:28:55.535Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2018-11-22T07:29:56.713Z] Session [8e0ea5e0-ee27-11e8-9648-3b1037b247eb] - page.onError - msg: KR: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) 升级您的浏览器，以便更好的视频观看体验！ [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-11-22T07:29:56.713Z] Session [8e0ea5e0-ee27-11e8-9648-3b1037b247eb] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2018-11-22T07:34:08.362Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+Memory exhausted.
