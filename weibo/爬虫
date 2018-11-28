@@ -1,18 +1,92 @@
-import requests #导入requests工具箱
+# import requests #导入requests工具箱(库，模块,类)，post,request....
+#
+# from lxml import etree
+#
+#
+# re = requests.get('https://www.dytt8.net/')
+#
+# dytt8 = re.content.decode('gbk')
+#
+# dytt8_html = etree.HTML(dytt8)
+#
+# dytt8_list = dytt8_html.xpath(
+#     '//div[@class="co_content2"]/ul/a/text()'
+# )
+#
+# for i in dytt8_list:
+#
+#     print(i)
 
-from lxml import etree
+# class :
+#
+#     def __init__(self, name, age):
+#         self.leg = 2
+#         self.eye = 2
+#         self.mouth = 1
+#         self.name = name
+#         self.age = age
+#
+#     def run(self):
+#         print('{0}用{1}条腿散步'.format(self.name,self.leg))
+#
+#     def eat(self):
+#         print('{0}用{1}张嘴吃饭'.format(self.name,self.mouth))
+#
+#     def daying(self):
+#         print('自我介绍！姓名是：{0}，年龄是：{1}'.format(self.name,self.age))
+#
+# name=input('请输入一个名字：')
+# age = input('请输入你的年龄：')
+# zhoulin = po(name, age)
+# people.daying()
+# people.eat()
+# people.run()
+
+#print('菁睿,{}'.format(13))
+'古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，'
+'小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？3'
+''
+class Animal:
+    def __init__(self):
+        pass
+
+    def la(self):
+        print('la......')
+
+    def run(self):
+        print('Animal:run....')
 
 
-re = requests.get('https://www.dytt8.net/')
+class People(Animal):
+    def __init__(self, name):
+        super(People).__init__()
 
-dytt8 = re.content.decode('gbk')
+        pass
 
-dytt8_html = etree.HTML(dytt8)
+    def eat(self):
+        print('正在吃。。。')
 
-dytt8_list = dytt8_html.xpath(
-    '//div[@class="co_content2"]/ul/a/text()'
-)
+    def run(self):
+        print('Pepole:run....')
 
-for i in dytt8_list:
+class Employee(Animal, People):
+    empCount = 0
+    def __init__(self):
+        # super(People).__init__()
+        pass
+    def sa(self):
+        print('sa.....')
 
-    print(i)
+    # def run(self):
+    #     print('Employee:run......')
+a = Employee()
+a.run()
+
+b = People('菁睿')
+b.run()
+'mysql是数据库'
+'socket是套接字'
+'什么是多线程'
+class Socket(object):
+    def __init__(self):
+        pass

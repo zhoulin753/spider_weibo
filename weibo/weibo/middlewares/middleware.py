@@ -26,12 +26,9 @@ class JavaScriptMiddleware(object):
             择优,当process_request这个方法当返回response对象时，直接跳到process_response方法进行response
             传递
             '''
-
             spider.driver.get(request.url)  # 发送url这个请求
-
             js = "var q=document.body.scrollTop=10000"
             spider.driver.execute_script(js)  # 可执行js，模仿用户操作。此处为将页面拉至最底端。
-
             body = spider.driver.page_source  # 返回的页面html
             spider.driver.save_screenshot('new.png')
             print("访问" + request.url)
@@ -41,11 +38,13 @@ class JavaScriptMiddleware(object):
             return None
 
     def process_response(self, request, response, spider):
+
         '''
         这个函数是专门处理我们的response，我们要判断，如果这个url大于90，那么我们就可以判断出类似与
         https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=8&lefnav=0&cursor=
         这种的url，那么我们就要进行重新处理，就要精要response_new这个函数
         '''
+
         if len(response.url) < 90:
             return response
         else:

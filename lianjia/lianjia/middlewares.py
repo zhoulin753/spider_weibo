@@ -90,7 +90,11 @@ class LianjiaDownloaderMiddleware(object):
             spider.driver.get(request.url)
             print('访问：' + request.url)
             html = spider.driver.page_source
-            return HtmlResponse(spider.driver.current_url, body=html, encoding='utf-8', request=request)
+            response_html = HtmlResponse(spider.driver.current_url, body=html, encoding='utf-8', request=request)
+            return response_html
+            # if spider.page_dict:
+
+
         else:
             return None
 
