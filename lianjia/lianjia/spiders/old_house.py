@@ -14,6 +14,7 @@ PhantomJS_path = os.path.dirname(
 
 add_url = {}
 
+
 class OldHouseSpider(CrawlSpider):
     name = 'old_house'
     # allowed_domains = ['sh.lianjia.com/ershoufang/']
@@ -48,40 +49,58 @@ class OldHouseSpider(CrawlSpider):
 
     )
 
-
     def parse_item(self, response):
         item = LianjiaItem()
-        page = self.get_page(response)
-        new_page = 1
-        while add_url[response.url.split('/')[4]] >= new_page:
-            response_or_resquest = self.send_requset(response, new_page)
-            print(add_url)
+        self.get_page(response)
+        if response.url.split('/')[5] == '':
+            visited_page = 1
+            new_page = 1
+        else:
+
+            visited_page = int(response.url.split('/')[5][2:])
+            new_page = visited_page + 1
+        for info in self.analysis_response(response, item):
+            yield info
+
+        if add_url[response.url.split('/')[4]] >= new_page:
+            response_or_resquest = self.send_requset(response, visited_page)
             if isinstance(response_or_resquest, HtmlResponse):
-                print('开始解析', response.url)
-                new_page += 1
+                if response.url not in self.start_urls:
+                    yield Request(response.url+'pg{}'.format(new_page+1) + '/',
+                           callback=self.parse_item)
             elif isinstance(response_or_resquest, Request):
-                print('request:', 'ok', response.url)
                 yield response_or_resquest
-                new_page += 1
-            else:
-                print('结束：', response.url)
-                break
+
+
     def get_page(self, response):
         url_list = response.url.split('/')
-        if not url_list[5]:
-            page = json.loads(response.xpath('//div[@comp-module="page"]/@page-data')[0].extract())['totalPage']
-            add_url[url_list[4]] = int(page)
-            print('get_page运行结束', add_url)
+        if url_list[5] == '':
+            try:
+                page = json.loads(response.xpath('//div[@comp-module="page"]/@page-data')[0].extract())['totalPage']
+                add_url[url_list[4]] = int(page)
 
+            except:
+                add_url[url_list[4]] = 1
 
-    def send_requset(self, response, new_page):
+    def send_requset(self, response, visited_page):
         url_list = response.url.split('/')
-        if url_list[5]=='':
-            print('url_list[5]', url_list)
-            return Request(response.url + 'pg' + str(new_page) + '/', callback=self.parse_item)
-        else:
-            page = int(url_list[5][3:])
-            if add_url[url_list[4]] >= page and url_list[6]=='' and len(url_list) > 7:
-                return Request(response.url + 'pg' + str(new_page) + '/', callback=self.parse_item)
-            else:
-                return None
+        if url_list[5] == '':
+            return response
+        elif url_list[5] != '':
+            return Request(response.url.replace('pg{}'.format(visited_page), 'pg{}'.format(visited_page + 1)), callback=self.parse_item)
+
+    def analysis_response(self, response, item):
+        page_information_list = response.xpath('//li[@class="clear LOGCLICKDATA"]/div[@class="info clear"]')
+        # print(page_information_list)
+        for i in page_information_list:
+            item['title'] = i.xpath('div[@class="title"]/a/text()')[0].extract()
+            item['name'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/a/text()')[0].extract()
+            item['houseinfo'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[1]
+            item['area'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[2]
+            item['finish'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[4]
+            item['house_type'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[3]
+            item['floor'] = i.xpath('div[@class="flood"]/div[@class="positionInfo"]/text()')[0].extract()
+            item['address'] = i.xpath('div[@class="flood"]/div[@class="positionInfo"]/a/text()')[0].extract()
+            item['cost'] = i.xpath('div[@class="priceInfo"]/div[@class="totalPrice"]/span/text()')[0].extract()+'万'
+            item['price'] = i.xpath('div[@class="priceInfo"]/div[@class="unitPrice"]/span/text()')[0].extract()
+            yield item
