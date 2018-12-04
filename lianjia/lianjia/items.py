@@ -21,4 +21,4 @@ class LianjiaItem(scrapy.Item):
     address = scrapy.Field() #地址
     cost = scrapy.Field() #多少钱
     price = scrapy.Field() #单价
-
+    url = scrapy.Field()

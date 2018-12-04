@@ -17,7 +17,7 @@ add_url = {}
 
 class OldHouseSpider(CrawlSpider):
     name = 'old_house'
-    # allowed_domains = ['sh.lianjia.com/ershoufang/']
+
     start_urls = ['https://sh.lianjia.com/ershoufang/pudong/',
                   'https://sh.lianjia.com/ershoufang/minhang/',
                   'https://sh.lianjia.com/ershoufang/baoshan/',
@@ -41,7 +41,7 @@ class OldHouseSpider(CrawlSpider):
     rules = (
         Rule(
             LinkExtractor(
-                # allow='/ershoufang\w+/',
+
                 restrict_xpaths=r'//div[@data-role="ershoufang"]/div[2]/a'
             ),
             callback='parse_item',
@@ -56,7 +56,6 @@ class OldHouseSpider(CrawlSpider):
             visited_page = 1
             new_page = 1
         else:
-
             visited_page = int(response.url.split('/')[5][2:])
             new_page = visited_page + 1
         for info in self.analysis_response(response, item):
@@ -66,11 +65,10 @@ class OldHouseSpider(CrawlSpider):
             response_or_resquest = self.send_requset(response, visited_page)
             if isinstance(response_or_resquest, HtmlResponse):
                 if response.url not in self.start_urls:
-                    yield Request(response.url+'pg{}'.format(new_page+1) + '/',
-                           callback=self.parse_item)
+                    yield Request(response.url + 'pg{}'.format(new_page + 1) + '/',
+                                  callback=self.parse_item)
             elif isinstance(response_or_resquest, Request):
                 yield response_or_resquest
-
 
     def get_page(self, response):
         url_list = response.url.split('/')
@@ -87,20 +85,25 @@ class OldHouseSpider(CrawlSpider):
         if url_list[5] == '':
             return response
         elif url_list[5] != '':
-            return Request(response.url.replace('pg{}'.format(visited_page), 'pg{}'.format(visited_page + 1)), callback=self.parse_item)
+            return Request(response.url.replace('pg{}'.format(visited_page), 'pg{}'.format(visited_page + 1)),
+                           callback=self.parse_item)
 
     def analysis_response(self, response, item):
         page_information_list = response.xpath('//li[@class="clear LOGCLICKDATA"]/div[@class="info clear"]')
         # print(page_information_list)
         for i in page_information_list:
-            item['title'] = i.xpath('div[@class="title"]/a/text()')[0].extract()
-            item['name'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/a/text()')[0].extract()
-            item['houseinfo'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[1]
-            item['area'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[2]
-            item['finish'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[4]
-            item['house_type'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[3]
-            item['floor'] = i.xpath('div[@class="flood"]/div[@class="positionInfo"]/text()')[0].extract()
-            item['address'] = i.xpath('div[@class="flood"]/div[@class="positionInfo"]/a/text()')[0].extract()
-            item['cost'] = i.xpath('div[@class="priceInfo"]/div[@class="totalPrice"]/span/text()')[0].extract()+'万'
-            item['price'] = i.xpath('div[@class="priceInfo"]/div[@class="unitPrice"]/span/text()')[0].extract()
+            item['title'] = i.xpath('div[@class="title"]/a/text()')[0].extract().strip()
+            item['name'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/a/text()')[0].extract().strip()
+            item['houseinfo'] = \
+                i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[1].strip()
+            item['area'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[2].strip()
+            item['finish'] = i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[4].strip()
+            item['house_type'] = \
+                i.xpath('div[@class="address"]/div[@class="houseInfo"]/text()')[0].extract().split('|')[3].strip()
+            item['floor'] = i.xpath('div[@class="flood"]/div[@class="positionInfo"]/text()')[0].extract().strip()
+            item['address'] = i.xpath('div[@class="flood"]/div[@class="positionInfo"]/a/text()')[0].extract().strip()
+            item['cost'] = i.xpath('div[@class="priceInfo"]/div[@class="totalPrice"]/span/text()')[0].extract().strip()
+            item['price'] = i.xpath('div[@class="priceInfo"]/div[@class="unitPrice"]/span/text()')[0].extract()[2:-4].strip()
+            item['url'] = response.url
             yield item
+
